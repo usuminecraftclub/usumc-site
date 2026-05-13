@@ -293,6 +293,16 @@
       .top-bar { padding: 0 1.25rem; }
       .page { padding: 3rem 1.25rem 4rem; }
       footer.site-footer { padding: 3rem 1.25rem; }
+
+      .top-chip {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.75rem;
+        gap: 0.35rem;
+      }
+      .top-chip span { display: none; }
+      .top-chip #ip-display,
+      .top-chip #player-count,
+      .top-chip #discord-count { display: inline; }
     }
 
     /* ── ANIMATIONS ── */
@@ -423,7 +433,6 @@
     <h3 class="footer-heading">Important Links</h3>
     <a href="rules.html" class="footer-link">In-Game Rules</a>
     <a href="https://discord.gg/K6ZzpYHba" target="_blank" class="footer-link">Get Support</a>
-    <a href="#about" class="footer-link">About USU MC</a>
     <div style="display:flex;gap:0.5rem;margin-top:0.5rem;">
       <a href="https://discord.gg/K6ZzpYHba" target="_blank" class="social-icon">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg"
@@ -439,10 +448,6 @@
       <span id="footer-ip-display">mc.usumc.net</span>
       <i class="uil-copy-alt" style="opacity:0.4;"></i>
     </div>
-    <h3 class="footer-heading" style="margin-top:0.75rem;">Quick Links</h3>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem 1.25rem;">
-      <a href="https://discord.gg/K6ZzpYHba" target="_blank" class="footer-link">Discord Server <i class="uil-external-link-alt"></i></a>
-      <a href="#" class="footer-link">USU Website <i class="uil-external-link-alt"></i></a>
     </div>
   </section>
 
