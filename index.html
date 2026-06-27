@@ -93,7 +93,7 @@
     .hero {
       display: grid;
       grid-template-columns: 1fr 1.15fr;
-      min-height: unset;        /* ← remove the 82vh */
+      min-height: unset;
       max-width: 1200px;
       margin: 0 auto;
       padding: 3rem 2.5rem 0;
@@ -104,19 +104,18 @@
     .mc-figure-wrap {
       display: flex;
       justify-content: center;
-      align-items: flex-end;  /* ← keeps Steve sitting at the bottom */
+      align-items: flex-end;
       animation: float 4s ease-in-out infinite;
     }
 
     .hero-brand {
       display: flex;
       flex-direction: column;
-      justify-content: center; /* ← vertically centers content within the full height */
+      justify-content: center;
       gap: 1.5rem;
       min-width: 0;
     }
 
-    /* Steve image */
     .mc-figure-wrap {
       display: flex;
       justify-content: center;
@@ -127,19 +126,18 @@
       height: 700px;
       width: auto;
       image-rendering: pixelated;
-      max-height: min(700px, 40vw);  /* ← add this */
+      max-height: min(700px, 40vw);
     }
     @keyframes float {
       0%,100% { transform: translateY(0); }
       50%      { transform: translateY(-18px); }
     }
 
-    /* ── HERO BRANDING ── */
     .hero-brand {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      min-width: 0;   /* ← add this */
+      min-width: 0;
     }
 
     .usumc-title {
@@ -425,7 +423,7 @@
     <a href="#" class="nav-link"><i class="uil-estate"></i> Home</a>
     <a href="#build" class="nav-link"><i class="uil-constructor"></i> Campus Build</a>
     <a href="#smp" class="nav-link"><i class="uil-trees"></i> SMP</a>
-    <a href="#redstone" class="nav-link"><i class="uil-circuit"></i> Redstone</a>
+    <a href="#parkour" class="nav-link"><i class="uil-directions"></i> Parkour</a>
     <a href="./rules.html" class="nav-link"><i class="uil-balance-scale"></i> Rules</a>
   </nav>
 
@@ -494,7 +492,7 @@
 
 
 <!-- ══════════════════════════════════════════
-     PANEL 1 — USU CAMPUS (slant: bottom-left down, bottom-right up)
+     PANEL 1 — USU CAMPUS
 ══════════════════════════════════════════ -->
 <div class="panel panel-slant-up" id="build">
   <div class="panel-bg" style="background-image: url('src/images/campus.png');"></div>
@@ -507,7 +505,7 @@
 
 
 <!-- ══════════════════════════════════════════
-     PANEL 2 — SMP (slant: bottom-left up, bottom-right down)
+     PANEL 2 — SMP
 ══════════════════════════════════════════ -->
 <div class="panel panel-slant-down" id="smp">
   <div class="panel-bg" style="background-image: url('src/images/survival.png');"></div>
@@ -520,14 +518,16 @@
 
 
 <!-- ══════════════════════════════════════════
-     PANEL 3 — REDSTONE (flat bottom → bleeds into footer)
+     PANEL 3 — AGGIE PARKOUR (flat bottom → bleeds into footer)
 ══════════════════════════════════════════ -->
-<div class="panel" id="redstone" style="margin-bottom:0;">
-  <div class="panel-bg" style="background-image: url('src/images/redstone.png');"></div>
+<div class="panel" id="parkour" style="margin-bottom:0;">
+  <div class="panel-bg" style="background-image: url('src/images/parkour.png');"></div>
   <div class="panel-overlay"></div>
   <div class="panel-content" style="padding-bottom:0;">
     <div class="panel-sub">Gamemode</div>
-    <h2 class="panel-title">Redstone &amp; Engineering</h2>
+    <h2 class="panel-title">
+      <span style="color:#55FFFF;">Aggie</span> <span style="color:#00AAAA;">Parkour</span>
+    </h2>
   </div>
 </div>
 
@@ -557,7 +557,6 @@
       <span style="font-weight:600; font-size:0.75rem; opacity:0.5; letter-spacing:0.05em;">IP</span>
       <span id="footer-ip-display">mc.usumc.net</span>
       <i class="uil-copy-alt" style="opacity:0.4;"></i>
-    </div>
     </div>
   </section>
 
